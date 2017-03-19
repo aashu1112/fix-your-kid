@@ -36,3 +36,37 @@
 .GE-wrong-result, .GE-correct-result {
   /*display: none;*/
 }
+
+input[type="button"], button {
+    -moz-box-sizing: content-box;
+}
+.btn-fb-share {
+  cursor: pointer;
+  position: absolute !important;
+  bottom: 10px !important;
+  right: 10px !important;
+}
+.btn-tw-share {
+  position: absolute !important;
+  bottom: 30px !important;
+  right: 10px !important;
+}
+
+.GE-about-us {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 30px !important;
+  padding: 0px 5px 0px 5px !important;
+}
+
+.event-details {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.contri p {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}

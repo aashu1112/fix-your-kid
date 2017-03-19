@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0 minimal-ui">
+  <meta property="og:url"           content="http://www.localhost:8000" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Honey, I raised the kid right!" />
+  <meta property="og:description"   content="A chose your own adventure format of storytelling that takes you through a few situations that new parents are often confronted with. The aim of the game is to highlight the gender role biases that almost all people internalise. By focusing on the importance of raising the boy child correctly, the game tries to showcase the importance of fighting patriarchy to gender equality." />
+  <meta property="og:image"         content="http://localhost:3000/src/img/fix_your_kid_cover.jpg" />
+
   <title>Honey, I raised the kid right!</title>
   <link rel="stylesheet" type="text/css" href="./lib/css/flowtime.css">
   <!--Import materialize.css-->
@@ -14,31 +23,10 @@
     html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
         font-family: myCustomFont;
     }
-  input[type="button"], button {
-    -moz-box-sizing: content-box;
-}
-.btn-fb-share {
-  cursor: pointer;
-  position: absolute !important;
-  bottom: 10px !important;
-  right: 10px !important;
-}
-.btn-tw-share {
-  position: absolute !important;
-  bottom: 30px !important;
-  right: 10px !important;
-}
   </style>
-  <meta property="og:url"           content="http://www.localhost:8000" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Honey, I raised the kid right!" />
-  <meta property="og:description"   content="A chose your own adventure format of storytelling that takes you through a few situations that new parents are often confronted with. The aim of the game is to highlight the gender role biases that almost all people internalise. By focusing on the importance of raising the boy child correctly, the game tries to showcase the importance of fighting patriarchy to gender equality." />
-  <meta property="og:image"         content="http://localhost:3000/src/img/fix_your_kid_cover.jpg" />
-
   <link rel="stylesheet" type="text/css" href="./src/css/style.css">
 </head>
 <body>
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -68,8 +56,8 @@
 <div class="flowtime">
   <div class="ft-section" data-id="section-1">
     <!-- PAGE 1 Start Here -->
-    <div class="ft-page" data-id="page-1" data-start-page="true">
-      <div class="container">
+    <div class="ft-page valign-wrapper" data-id="page-1" data-start-page="true">
+      <div class="container valign">
         <div class="row">
           <div class="col s12">
               <div class="ft-fragment">
@@ -85,12 +73,12 @@
                   <button class="waves-effect waves-purple btn-large GE-button" id="GE-start" style="font-size: 18px;">Help him out!</button>
               </div>
 
+              <button class="waves-effect waves-light btn GE-button GE-about-us" id="GE-info-content">Info</button>
+
               <div class="fb-share-button btn-fb-share" data-href="http://localhost:8000" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="http://localhost:8000">Share</a></div>
               <div class="btn-tw-share">
                 <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20game">Tweet</a>
               </div>
-
-              <!-- <img class="btn-fb-share" src="./src/img/fb.png" data-href="http://localhost:8000" data-layout="button_count" width="50px" width="50px" title="Tell your friends" > -->
             </div>
         </div>
       </div>
@@ -98,8 +86,8 @@
     <!-- PAGE 1 End's Here -->
 
     <!-- PAGE 2 Start Here -->
-    <div class="ft-page" data-id="page-2">
-      <div class="container">
+    <div class="ft-page valign-wrapper" data-id="page-2">
+      <div class="container valign">
         <div class="row">
           <div class="col s12">
             <div class="ft-fragment">
@@ -123,21 +111,6 @@
                     <button class="waves-effect waves-purple btn-large GE-answer-button GE-step1" data-score="0">What are the other parents going to say?</button>
                   </div>
                 </div>
-
-                <!-- <div class="col s6">
-                  <div class="ft-fragment GE-break">
-                    <button class="waves-effect waves-purple btn-large GE-answer-button GE-step1" data-score="0">What a fabulous imagination! Let's do it!</button>
-                  </div>
-                  <div class="ft-fragment GE-break">
-                    <button class="waves-effect waves-purple btn-large GE-answer-button GE-step1" data-score="1">Ok that doesn't sound right. Let's get him a dinosaur instead</button>
-                  </div>
-                  <div class="ft-fragment GE-break">
-                    <button class="waves-effect waves-purple btn-large GE-answer-button GE-step1" data-score="0">What are the other parents going to say? </button>
-                  </div>
-                </div>
-                <div class="col s6">
-                  <img class="responsive-img" src="./src/img/birthday.png" style="height: 300px !important;" >
-                </div> -->
               </div>
             </div>
           </div>
@@ -147,8 +120,8 @@
     <!-- PAGE 2 End's Here -->
 
     <!-- PAGE 3 start's Here -->
-    <div class="ft-page" data-id="page-3">
-      <div class="container">
+    <div class="ft-page valign-wrapper" data-id="page-3">
+      <div class="container valign">
         <div class="row">
           <div class="col s12">
             <div class="ft-fragment">
@@ -182,8 +155,8 @@
     <!-- PAGE 3 Ends Here -->
 
     <!-- PAGE 4 start's Here -->
-    <div class="ft-page" data-id="page-4">
-      <div class="container">
+    <div class="ft-page valign-wrapper" data-id="page-4">
+      <div class="container valign">
         <div class="row">
           <div class="col s12">
             <div class="ft-fragment">
@@ -216,8 +189,8 @@
     <!-- PAGE 4 Ends Here -->
 
     <!-- PAGE 5 start's Here -->
-    <div class="ft-page" data-id="page-5">
-      <div class="container">
+    <div class="ft-page valign-wrapper" data-id="page-5">
+      <div class="container valign">
         <div class="row">
           <div class="col s12">
             <div class="ft-fragment">
@@ -251,8 +224,8 @@
     <!-- PAGE 5 Ends Here -->
 
     <!-- PAGE 6 start's Here -->
-    <div class="ft-page" data-id="page-6">
-      <div class="container">
+    <div class="ft-page valign-wrapper" data-id="page-6">
+      <div class="container valign">
         <div class="row">
           <div class="col s12">
             <div class="ft-fragment">
@@ -285,8 +258,8 @@
     <!-- PAGE 6 Ends Here -->
 
     <!-- PAGE 7 start's Here -->
-    <div class="ft-page" data-id="page-7">
-      <div class="container">
+    <div class="ft-page valign-wrapper" data-id="page-7">
+      <div class="container valign">
         <div class="row">
           <div class="col s12">
             <div class="ft-fragment">
@@ -321,8 +294,8 @@
 
 
     <!-- PAGE Result start's Here -->
-    <div class="ft-page" data-id="page-8">
-      <div class="container">
+    <div class="ft-page valign-wrapper" data-id="page-8">
+      <div class="container valign">
         <div class="row">
           <div class="col s12" data-id="myResultDiv">
             <h2 class="center-align GE-default-text">Result</h2>
@@ -331,7 +304,7 @@
                 <img class="responsive-img" src="./src/img/worst-result.png" style="height: 300px !important;" >
                 <h3 class="center-align GE-default-text">Your son is still as confused as ever. Your bias is showing.</h3>
 
-                <button class="waves-effect waves-purple btn-large btn-large GE-button GE-wrong-result" id="GE-Reset" style="font-size: 18px;">Are you sure you want children?</button>
+                <button class="waves-effect waves-purple btn-large GE-button GE-wrong-result" id="GE-Reset" style="font-size: 18px;">Are you sure you want children?</button>
               </div>
             </div>
             <div data-id="bad" class="center-align">
@@ -339,7 +312,7 @@
                 <img class="responsive-img" src="./src/img/bad-result.png" style="height: 300px !important;" >
                 <h3 class="center-align GE-default-text">You've given your son some idea of how to be a good man. But he still has a long way to go before he fully understands the other sex.</h3>
 
-                <button class="waves-effect waves-purple btn-large btn-large GE-button GE-wrong-result" id="GE-Reset" style="font-size: 18px;">Try harder!</button>
+                <button class="waves-effect waves-purple btn-large GE-button GE-wrong-result" id="GE-Reset" style="font-size: 18px;">Try harder!</button>
               </div>
             </div>
             <div data-id="success" class="center-align">
@@ -347,7 +320,7 @@
                 <img class="responsive-img" src="./src/img/success-result.png" style="height: 300px !important;" >
                 <h3 class="center-align GE-default-text">Congratulations, you've countered patriarchy one child at a time. You've raised an enlightened boy, aware of his privileges, minus any gender bias.</h3>
 
-                <button class="waves-effect waves-purple btn-large btn-large GE-button GE-correct-result" id="GE-Reset" style="font-size: 18px;">Raise another boy!</button>
+                <button class="waves-effect waves-purple btn-large GE-button GE-correct-result" id="GE-Reset" style="font-size: 18px;">Raise another boy!</button>
               </div>
             </div>
           </div>
@@ -356,18 +329,31 @@
     </div>
     <!-- PAGE Result Ends Here -->
 
-
-    <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-  <!-- Your share button code -->
+    <!-- PAGE Info -->
+    <div class="ft-page valign-wrapper" data-id="page-9" id="projectInfoPage">
+      <div class="container valign">
+        <div class="row">
+          <div class="col s12">
+             <button class="waves-effect waves-light btn GE-button GE-about-us" id="GE_go_backhome">Try the game!</button>
+            <h3 class="center-align GE-default-text">Honey, I raised the kid right!</h3>
+            <br>
+            <h5 class="center-align GE-default-text">A chose your own adventure format of storytelling that takes you through a few situations that new parents are often confronted with. The aim of the game is to highlight the gender role biases that almost all people internalise. By focusing on the importance of raising the boy child correctly, the game tries to showcase the importance of fighting patriarchy to gender equality.</h5>
+            <div class="center-align">
+              <img class="responsive-img GE-h2-break" src="https://lh3.googleusercontent.com/UUFEcvCvIYKWUUUB4rFoHmlWZoY3aS2JbBAa52CJmfnwEwLEYdGkJVjfaYaZC6TUwGm1WHdKeDjwrxrHJPT_Xos7fe1kSlczyp1T-bLYW6b4uPt4mSyx1Kha6nS3FF_F-u0iZsoxjr0Sig5iB3MB82w9PgsFaqsqVSBCckriZQhdOGJZrrVOiP-AgBa_wsXrpVOshbuYYxSJE-zfffHAoPa7KLwvBnw0kEVNhS69U2KskweUgDli0Fr89xJep4FKwQak7Q0ltoVMf6TKqebJJaxg6Opb0BPTnOmi5aPkftJZVnoaudozhfs-lS4F3Bm0Wxw1qZJ61sy_szTT7ZJTBA5Fqc2KkXDM95nE37thiJpWwRlMVMPPO56VB21FZvFfmEvK1UiGOD5nsngkqTzAcRwiYwpjoPENj35ukAhPeXvv28wT6C_4bLnSbCS4cgAnecXKvjJHGDDjWeZx3Cb9swoWeGEnRTqwk-_GEUGJxiS0Ssz_tktMTHQFfwWzpBI7zZyiy5wi-QvHc6fDsdAHOA05gG4gPQMSnE2otsWTS1uRA8Jl2jtw7Pj0YrgGdsRY_T6ly0yOrKhCwIsMARgmdidc8YbPqBypBCJl3NJkQHKu2bOtcZvGgGHOX5quqQImKVleak4vdHiMvbejsWOsyn17Nw1UTHbU-pjjDzvh7Q=w924-h635-no"  style="height: 200px !important;">
+            </div>
+            <div class="GE-default-text contri">
+              <h4>Contributors</h4>
+              <p>Sagar Shah, Editor at <a href="http://www.arre.co.in/">Arré</a></p>
+              <p>Akshita Monga, Designer at <a href="http://www.arre.co.in/">Arré</a></p>
+              <p>Aashutosh Bhatt, Data Engineer at <a href="https://pykih.com/">pykih</a></p>
+            </div>
+            <br>
+            <p class="GE-default-text event-details">* This prototype was made at "Hack The Newsroom" event by <a href="https://www.globaleditorsnetwork.org/programmes/editors-lab/season-5-(2016-2017)/" _blank="true" >GEN</a> on 17-18 Mar, 2017 at Mumbai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PAGE Info END-->
 
   </div>
 </div>
