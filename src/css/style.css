@@ -1,0 +1,38 @@
+.ft-page {
+  background: rgba(0, 0, 54, 1);
+}
+
+.GE-button {
+  background: #fff !important;
+  color: #212121 !important;
+}
+
+.GE-default-text {
+  color: #fff;
+}
+
+.GE-answer-button {
+  background: #fff !important;
+  color: #212121 !important;
+  width: 100%;
+  word-wrap: break-word;
+  padding: 5%;
+  height: auto;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.GE-ease-in-out {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.GE-h2-break {
+  margin-bottom: 1.424rem ;
+}
+
+.GE-wrong-result, .GE-correct-result {
+  /*display: none;*/
+}
